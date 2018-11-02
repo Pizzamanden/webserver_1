@@ -62,12 +62,12 @@ class listDir {
      *
      *
      */
-    public function createList($sortType, $idName)
+    public function createList($sortType, $className)
     {
-      $toEcho = "<ul id='$idName'>";
+      $toEcho = "<ul class='$className'>";
       $array = $this->makeArray($sortType);
       while (current($array)) {
-          $toEcho .= "<li><a href='" . $this->dir . "/" . key($array)."' >" . key($array) . "</a></li>";
+          $toEcho .= "<li><a href='" . $this->dir . "/" . key($array)."' ><span>" . key($array) . "</span></a></li>";
           next($array);
       }
       $toEcho .= "</ul>";
