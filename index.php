@@ -16,7 +16,8 @@
 
 
 	// Array for links in header
-	// Format: Title => Link
+	// Format: Tab-name => Link/GET-name
+	// OBS make the $_GET["page"] THE SAME as the tab-name
 	$headerLinks = array(
 		"projects" => "/?page=projects",
 		"wordpress" => "/wordpress",
