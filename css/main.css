@@ -1,4 +1,7 @@
 /* ---------------------- Other --------------------------- */
+*{
+  box-sizing: border-box;
+}
 body{
     font-family: arial;
 }
@@ -12,7 +15,7 @@ body{
     justify-content: space-around;
 }
 a{
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: 0.2s;
 }
@@ -22,19 +25,10 @@ button{
 /* ---------------------- Header --------------------------- */
 
 .header_main{
-  background-color: #333;
+  background-color: #555;
   color: #fff;
   padding: 0 20px;
-}
-.header_main>div>*{
-
-}
-.header_main a{
-  color: #fff;
-}
-.header_logo{
-  color: #fff;
-
+  border-bottom: 4px solid #9744be;
 }
 .header_logo a{
   height: 100%;
@@ -51,27 +45,25 @@ button{
   display: block;
   font-size: 1.6em;
 }
-
-
-
-.header_nav li{
-
-}
 .header_nav a{
   color: #fff;
   display: block;
   padding: 20px 20px;
-  background-color: #333;
+  border-top: 4px solid #555;
+  border-left: 4px solid #555;
+  border-right: 4px solid #555;
 }
 .header_nav a:hover{
-  background-color: #555;
+  background-color: #fff;
+  border-top: 4px solid #9744be;
+  border-left: 4px solid #9744be;
+  border-right: 4px solid #9744be;
+  color: #9744be;
 }
-
-
 
 /* ---------------------- Main --------------------------- */
 .content_main{
-  background-color: #444;
+  background-color: #000;
   min-height: 900px;
 }
 
@@ -84,6 +76,14 @@ button{
 #main_assignment{
   display: flex;
   font-size: 20px;
+  color: #fff;
+}
+#main_assignment a{
+  color: #fff;
 }
 
 /* ---------------------- Footer --------------------------- */
+
+.footer_main{
+
+}
