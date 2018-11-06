@@ -18,7 +18,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
-	<link rel="stylesheet" href="http://127.0.0.1/wordpress/wp-content/themes/guccipress/peter.css">
 </head>
 
 <body <?php body_class(); ?>>
