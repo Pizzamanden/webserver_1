@@ -17,7 +17,7 @@ define('THIS_DAY', date('d'));
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'ayw48dxs');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'peter_db_periode_1');
 
 function myautoloader($classname) {
