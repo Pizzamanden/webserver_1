@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ 
+<html>
+     
+    <head>
+ 
+        <title>Performance</title>
+ 
+        <script type="text/javascript">
+			function Graph() {
+			  this.vertices = [];
+			  this.edges = [];
+			}
+
+			Graph.prototype = {
+			  addVertex: function(v) {
+			    this.vertices.push(v);
+			  }
+			};
+
+			var g = new Graph();
+			
+			console.log(g.hasOwnProperty('vertices'));
+			// true
+
+			console.log(g.hasOwnProperty('nope'));
+			// false
+
+			console.log(g.hasOwnProperty('addVertex'));
+			// false
+
+			console.log(g.__proto__.hasOwnProperty('addVertex'));
+			// true
+        </script> 
+    </head>
+    <body>
+    	<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#Performance">Link til kilde</a>
+    </body>
+</html>
+     
