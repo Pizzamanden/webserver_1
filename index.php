@@ -91,7 +91,7 @@
 			<?php
 
 				// Gets Assignment boxes if page = projects
-				if($pageName === "projects"){
+				if($pageName === "projects" || $pageName === "default"){
 			?>
 			<div class="main_assignment_wrap">
 				<?php
