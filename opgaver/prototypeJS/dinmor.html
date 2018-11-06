@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Din Mor</title>
+
+        <script type="text/javascript">
+            var x = {
+                firstName: "Gert",
+                lastName: "Hansen",
+                gender: "Apache",
+                age: 21,
+                height: 1.90,
+                fullName: function(){
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            console.log(x.fullName());
+            console.log(Object.getPrototypeOf(Object.getPrototypeOf(x)));
+        </script>
+    </head>
+    <body>
+        <p>D</p>
+    </body>
+</html>
