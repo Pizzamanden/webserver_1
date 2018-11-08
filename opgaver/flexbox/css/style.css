@@ -121,9 +121,11 @@ body{
     width: 70%;
 }
 .image-container{
+	width: calc(100%/3);
     /* Styling per image */
 }
 .image-container img{
+	width: 100%;
     display: block;
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
