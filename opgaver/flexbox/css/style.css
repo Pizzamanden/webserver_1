@@ -1,0 +1,141 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    CSS for flexbox assignment
+
+    Simple reset for browsers
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    Generic CSS for use across page
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+body{
+    /* Styling for the whole page */
+}
+.flex{
+    display: flex;
+}
+.flex.jc_b{
+    justify-content: space-between;
+}
+.flex.jc_a{
+    justify-content: space-around;
+}
+.flex.jc_c{
+    justify-content: center;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Page layout for
+    HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.header-wrap{
+    background-color: #5996d9;
+}
+.header-info{
+    width: 70%;
+    padding: 20px 0;
+    color: #fff;
+}
+.header-info a{
+    color: #fff;
+    text-decoration: none;
+}
+.header-date{
+    /* Styling for the date-area */
+}
+.header-usernav{
+    margin-left: auto;
+    /* Styling for the user signup and login area */
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Page layout for
+    HERO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.hero-wrap{
+    background-color: #d7e9fd;
+    padding: 60px 0;
+}
+.header-hero{
+    width: 70%;
+    align-items: center;
+}
+.subscribe-container{
+    /* Styling for the subscribe-area */
+}
+.logo-container{
+    /* Styling for the Logo-area */
+}
+.social-container{
+    /* Styling for the Social-area */
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Page layout for
+    IMAGE-BOX
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.image-display{
+    flex-wrap: wrap;
+    width: 70%;
+}
+.image-container{
+    /* Styling per image */
+}
+.image-container img{
+    display: block;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    Page layout for
+    FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -*/
+.footer-wrap{
+    background-color: #5996d9;
+    width: 100%;
+}
+.footer-content{
+    background-color: #d7e9fd;
+    width: 70%;
+    min-height: 200px;
+}
