@@ -21,6 +21,8 @@
 	$headerLinks = array(
 		"projects" => "/?page=projects",
 		"wordpress" => "/wordpress",
+		"Programmering" => "/programmeringsopgave",
+		"Client-Side" => "/clientsideopgave",
 		"empty" => ""
 	);
 ?>

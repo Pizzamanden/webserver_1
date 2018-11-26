@@ -1,0 +1,7 @@
+@import 'values';
+@import 'reset';
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+}
