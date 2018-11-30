@@ -10,8 +10,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="puz-wrap">
+        <div class="puz-header">
+            <h1>
+                Puzzle Game!
+            </h1>
+        </div>
+        <div class="puz-main">
+            <div class="puz-buttwrap">
+                <button class="genPuzzle" value="4">
+                    4 x 4
+                </button>
+                <button class="genPuzzle" value="6">
+                    6 x 6
+                </button>
+                <button class="genPuzzle" value="8">
+                    8 x 8
+                </button>
+                <button class="genPuzzle" value="10">
+                    10 x 10
+                </button>
+                <form method="POST">
+                    <input name="selfGen" type="number" class="formInput" min="2" max="16" value="2">
+                    <button name="subButt" type="button" class="formButt">
+                        Start!
+                    </button>
+                </form>
+            </div>
+            <ul class="puz-list">
 
-    A new page!
+            </ul>
+        </div>
+    </div>
 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
