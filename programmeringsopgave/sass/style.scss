@@ -51,6 +51,7 @@ body {
     display: flex;
 }
 .puz-buttwrap form input{
+    cursor: text;
     width: 60px;
     background-color: $font-color;
     color: $primary-color;
