@@ -12,7 +12,6 @@ var transitionDelayed = 300;
 function resizePuzList(){
     puzList.style.height = puzListSize.width - 4 + "px";
     puzListSize = puzList.getBoundingClientRect();
-    console.log(puzListSize);
 }
 resizePuzList();
 
@@ -54,7 +53,7 @@ function createArray(dimensions){
     };
     return tileArray;
 }; // END createArray()
-
+console.log("hmmm");
 // Generate HTML for the array
 function generateTiles(array){
     var getRoot = Math.sqrt(array.length);
@@ -85,8 +84,6 @@ function tileOnClick(trigger){
         selectionReady = false;
         var tileArrObj = tileArray[trigger.value];
         var tile = trigger;
-
-
         // Block of code for handling the click
         // First check if brick is active and/or found
         // Bricks stay in active mode when found
@@ -195,7 +192,9 @@ for(var i = 0; i < buttons.length; i++){
         startNewGame(this.value);
     });
 };
+console.log("added listener");
 document.getElementsByClassName("formButt")[0].addEventListener("click", function(e){
+    console.log("h");
     if(document.getElementsByClassName("formInput")[0].value % 2 === 0){
         startNewGame(document.getElementsByClassName("formInput")[0].value);
     } else {
