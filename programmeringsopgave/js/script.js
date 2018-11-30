@@ -9,14 +9,12 @@ var transitionCSS = 500;
 // Delayed transition for when tiles didnt match, added to the transitionCSS value
 var transitionDelayed = 300;
 
-
 function resizePuzList(){
     puzList.style.height = puzListSize.width - 4 + "px";
     puzListSize = puzList.getBoundingClientRect();
     console.log(puzListSize);
 }
 resizePuzList();
-
 
 // Create Tile object
 function createArray(dimensions){
@@ -57,7 +55,6 @@ function createArray(dimensions){
     return tileArray;
 }; // END createArray()
 
-
 // Generate HTML for the array
 function generateTiles(array){
     var getRoot = Math.sqrt(array.length);
@@ -81,7 +78,6 @@ function generateTiles(array){
         });
     }
 }; // END generateTiles()
-
 
 // Function for triggers when clicking a tile
 function tileOnClick(trigger){
@@ -146,7 +142,6 @@ function tileOnClick(trigger){
     }
 }; // END gameMechanic()
 
-
 // ANIMATION FUNCTIONS
 // Animations are run when bricks are clicked, not matching, and when matching
 function animateOn(target, value){
@@ -176,7 +171,6 @@ function animateFound(target){
     target.style.color = "#8A2BE2";
 }
 
-
 //
 function startNewGame(startValue){
     selectionReady = false;
@@ -187,15 +181,12 @@ function startNewGame(startValue){
     // Nothing can trigger buttons before the script has finished generating
     selectionReady = true;
 }
-
 // Function for purging game, space for more stuff like score
 function gamePurge(){
     puzList.innerHTML = "";
     tileArray = [];
     savedTile = "undefined";
 } // END purgeGame()
-
-
 
 // Run listener on buttons for generation
 var buttons = document.getElementsByClassName("genPuzzle");
