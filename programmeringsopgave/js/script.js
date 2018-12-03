@@ -101,8 +101,8 @@ function tileOnClick(trigger){
                     tileArray[savedTile.value].found = true;
                     tileArrObj.found = true;
                     setTimeout(function(){
-                        animateFound(savedTile);
-                        animateFound(tile);
+                        animateFound(savedTile, tileArray[savedTile.value].value);
+                        animateFound(tile, tileArrObj.value);
                         savedTile = "undefined";
                         selectionReady = true;
                     }, transitionCSS);
@@ -161,11 +161,12 @@ function animateOff(target){
         targetChild.innerHTML = "0";
     }, transitionCSS);
 }
-function animateFound(target){
+function animateFound(target, value){
     var targetChild = target.firstChild;
     target.style.cursor = "default";
     target.style.backgroundColor = "#000";
     target.style.color = "#8A2BE2";
+    targetChild.innerHTML = value + "";
 }
 
 //
