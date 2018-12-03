@@ -149,6 +149,9 @@ function animateOn(target, value){
     target.style.transform = "rotateY(180deg)";
     targetChild.style.transform = "rotateY(180deg)";
     targetChild.innerHTML = value + "";
+    setTimeout(function(){
+        targetChild.innerHTML = value + "";
+    }, transitionCSS);
 }
 function animateOff(target){
     var targetChild = target.firstChild;
