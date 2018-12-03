@@ -31,7 +31,7 @@ function createArray(dimensions){
             var randomNr = Math.floor(Math.random()*total);
             //If the array[thisRandomNumber] is undefined, it breaks the loop and repeats for I
             if(cordArray[randomNr] === undefined){
-                cordArray[randomNr] = Math.floor(i/2);
+                cordArray[randomNr] = Math.floor(i/2) + 1;
                 hasBeenSet = true;
             }
         }
