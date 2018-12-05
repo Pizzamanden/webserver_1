@@ -1,7 +1,14 @@
-@import 'values';
 @import 'reset';
+@import 'values';
+@import 'buttons';
+@import 'header';
+@import 'footer';
+@import 'mainContent';
 
-body {
+.setFont *{
   font: 100% $font-stack;
-  background-color: $primary-color;
+}
+
+.flex{
+    display: flex;
 }
