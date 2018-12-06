@@ -3,7 +3,6 @@
     define("THIS_TABLE", "client_side");
     define("PROJECT_START", ROOT . "clientsideopgave/");
 
-
     $loggedIn = false;
 ?>
 <!DOCTYPE html>
@@ -14,9 +13,15 @@
     <body class="setFont">
         <?php
             require_once "structure/header.php";
-
-            require_once "structure/content.php";
-
+        ?>
+        <div class="content_wrap">
+            <div class="content_div">
+            <?php
+                require_once "structure/loadPage.php";
+            ?>
+            </div>
+        </div>
+        <?php
             require_once "structure/footer.php";
         ?>
         <script src="js/jQueryLIB.js"></script>
