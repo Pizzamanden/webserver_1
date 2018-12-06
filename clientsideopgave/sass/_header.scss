@@ -4,9 +4,14 @@
 .header_hero{
     min-height: 100px;
     background-image: url("../img/Art-in-the-Park-Webpage-Banner-Splash.jpg");
+    box-shadow: inset 0 0 10px #000000;
 }
 .header_logo{
-
+    margin: 0 20px;
+}
+.header_logo img{
+    display: block;
+    height: 100%;
 }
 .header_login{
 
@@ -17,7 +22,7 @@
 .header_nav{
     background-color: red;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
     background-color: $secondary-color;
     color: $secondary-font;
 }

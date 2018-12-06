@@ -1,3 +1,11 @@
+.footer_wrap{
+    width: 100%;
+    padding: 40px 80px;
+    background-color: $secondary-color;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
 .footer_content{
-    color: red;
+    color: $secondary-font;
+    width: calc(100%/3.5);
 }

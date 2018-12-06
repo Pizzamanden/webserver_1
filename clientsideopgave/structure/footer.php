@@ -1,13 +1,13 @@
 <footer>
     <div class="footer_wrap flex">
         <div class="footer_content">
-            footer content 1
+            Footer Col 1
         </div>
         <div class="footer_content">
-            footer content 2
+            Footer Col 2
         </div>
         <div class="footer_content">
-            footer content 3
+            Footer Col 3
         </div>
     </div>
 </footer>

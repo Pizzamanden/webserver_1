@@ -2,7 +2,7 @@
     // Array for creating LI's for navigation
     $headerVar =[
     "home" => "?page=home",
-    "content" => "?page=content",
+    "gallery" => "?page=gallery",
     "about us" => "?page=aboutus"
     ];
 ?>
@@ -26,7 +26,7 @@
                     ?>
                 </ul>
             </nav>
-            <div class="header_login">
+            <div class="header_login flex">
                 <?php
                 // Check for active user and display the right buttons
                     if($loggedIn === true){
@@ -47,6 +47,11 @@
                 <div class="header_loginDIV">
                     <a href="?page=login">
                         Login
+                    </a>
+                </div>
+                <div class="header_signupDIV">
+                    <a href="?page=signup">
+                        Signup
                     </a>
                 </div>
                 <?php

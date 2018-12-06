@@ -1,5 +1,69 @@
-.minDiv{
-    word-wrap: break-word;
-    background-color: $background-color;
-    color: $font-color;
+.content_div{
+    width: 100%;
+}
+.gallery_wrap{
+
+}
+.gallery_cont{
+    display: flex;
+}
+.gallery_obj{
+    width: calc(100%/4);
+    position: relative;
+}
+.gallery_obj img{
+    display: block;
+    width: 100%;
+}
+.image_boxshader{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(10,10,10,0);
+    color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+.image_boxshader:hover{
+    background-color: rgba(10,10,10,0.6);
+    color: rgba(255, 255, 255, 1);
+}
+.image_boxshader .image_link{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.image_boxshader .image_link span{
+    font-weight: inherit;
+    align-self: center;
+    transform: translateY(-100%);
+}
+.image_boxshader .image_link:hover{
+    text-decoration: underline;
+}
+
+.image_boxshader .author_link{
+    transition: 0.3s;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(10,10,10,0);
+    padding: 6px 0;
+    cursor: pointer;
+}
+.image_boxshader .author_link:hover{
+    text-decoration: underline;
+    background-color: rgba(10,10,10,1);
 }
