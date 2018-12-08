@@ -26,7 +26,7 @@
         }
     } else {
 ?>
-<div class="">
+<div class="signup_wrap">
     <form class="" action="" method="post">
         <input type="email" name="email" value="">
         <input type="password" name="password" value="">

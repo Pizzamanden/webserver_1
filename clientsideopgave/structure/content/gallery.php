@@ -6,7 +6,6 @@
                 $result = $conn->query($sql);
                 $imgPre = "img/";
                 while ($row = $result->fetch_assoc()) {
-
             ?>
 
             <div class="gallery_obj">
