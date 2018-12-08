@@ -3,7 +3,7 @@
     if(isset($_GET["page"])){
         $getPageGET = $_GET["page"];
     } else {
-        $getPageGET = "homepage";
+        $getPageGET = "home";
     }
 
     function loadPage($pageAsString, $prePend){
@@ -11,8 +11,8 @@
     }
 
     switch ($getPageGET) {
-        case "homepage":
-            require_once loadPage("gallery", "structure/content/");
+        case "home":
+            require_once loadPage("home", "structure/content/");
             break;
         case "aboutus":
             require_once loadPage("aboutus", "structure/content/");
