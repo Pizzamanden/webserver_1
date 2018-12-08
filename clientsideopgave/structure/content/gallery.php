@@ -10,16 +10,21 @@
             ?>
 
             <div class="gallery_obj">
-                <img src="<?php echo $imgPre . $row["img_filename"]; ?>" alt="Gallery Image">
-                <div class="image_boxshader">
-                    <a href="" class="image_link">
-                        <span>
-                            View Image
-                        </span>
-                    </a>
-                    <a href="?page=profile&user=1" class="author_link">
-                        Artist name
-                    </a>
+                <div>
+                    <img src="<?php echo $imgPre . $row["img_filename"]; ?>" alt="Gallery Image">
+                    <div class="image_boxshader">
+                        <a href="" class="image_link">
+                            <span>
+                                View Image
+                            </span>
+                        </a>
+                        <a href="?page=profile&user=1" class="author_link">
+                            <?php echo $row["img_author"]; ?>
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                    Yo
                 </div>
             </div>
 
