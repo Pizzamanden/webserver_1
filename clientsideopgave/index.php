@@ -14,7 +14,7 @@
         <?php
             require_once "structure/header.php";
         ?>
-        <div class="content_wrap">
+        <div class="content_wrap" id="html_content">
             <div class="content_div">
             <?php
                 require_once "structure/loadPage.php";

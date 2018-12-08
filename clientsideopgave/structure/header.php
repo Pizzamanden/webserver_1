@@ -8,7 +8,7 @@
 ?>
 
 
-<header>
+<header id="html_header">
     <div class="header_wrap">
         <div class="header_hero" id="headerHero">
             <div class="header_logo">
