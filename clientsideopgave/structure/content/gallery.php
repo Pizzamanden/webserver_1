@@ -22,8 +22,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="">
-                    Yo
+                <div class="image_title">
+                    <?php echo $row["img_name"]; ?>
                 </div>
             </div>
 

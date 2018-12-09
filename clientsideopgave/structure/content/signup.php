@@ -27,10 +27,26 @@
     } else {
 ?>
 <div class="signup_wrap">
-    <form class="" action="" method="post">
-        <input type="email" name="email" value="">
-        <input type="password" name="password" value="">
-        <input type="text" name="username" value="">
+    <form class="signup_form" action="" method="post">
+        <div class="">
+            <label for="email">
+                Email:
+            </label><br>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="">
+            <label for="password">
+                Password: (Not checking repeat)
+            </label><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="password" name="passwordR" placeholder="Password repeated (not used)">
+        </div>
+        <div class="">
+            <label for="username">
+                Username:
+            </label><br>
+            <input type="text" name="username" placeholder="Username">
+        </div>
         <button type="submit" name="button">
             Signup
         </button>

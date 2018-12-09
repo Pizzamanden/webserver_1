@@ -9,6 +9,8 @@
 }
 .gallery_obj{
     width: calc(100%/4);
+}
+.gallery_obj>div{
     position: relative;
 }
 .gallery_obj img{
@@ -66,4 +68,13 @@
 .image_boxshader .author_link:hover{
     text-decoration: underline;
     background-color: rgba(10,10,10,1);
+}
+.gallery_obj .image_title{
+    padding: 12px 6px;
+    color: $secondary-font;
+    border: 1px solid $secondary-color;
+    background-color: $secondary-color;
+    font-weight: bolder;
+    font-size: 1.4em;
+    border-top: 0;
 }

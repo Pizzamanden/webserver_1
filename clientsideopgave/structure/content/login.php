@@ -26,11 +26,14 @@
     } else {
 ?>
 <div class="">
+    <h3>
+        Login
+    </h3>
     <form class="" action="" method="post">
-        <input type="email" name="email" value="">
-        <input type="password" name="password" value="">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
         <button type="submit" name="button">
-            Signup
+            Login
         </button>
     </form>
 </div>
