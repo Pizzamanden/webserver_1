@@ -1,10 +1,24 @@
 <div class="home_wrap">
     <div class="home_info_block">
         <h3>
-            Databases
+            SQL &amp; Sider
         </h3>
         <p>
-            Databases required for login, signup and the gallery
+            Uden setup nedenunder virker alle sidderne, undtagen login/signup.
+        </p>
+        <p>
+            I koden viser jeg at jeg kunne have echo'ed med PHP, men i stedet har lavet 1 statisk eksempel.
+        </p>
+        <p>
+            Login og signup poster til sig selv, så de er bare en form uden phpMyAdmin setup først.
+        </p>
+    </div>
+    <div class="home_info_block">
+        <h3>
+            Databaser
+        </h3>
+        <p>
+            Databaser der bruges i koden til login &amp; signup, og galleri
         </p>
         <ul>
             <li>
@@ -23,7 +37,5 @@
             </li>
         </ul>
     </div>
-    <div class="">
 
-    </div>
 </div>

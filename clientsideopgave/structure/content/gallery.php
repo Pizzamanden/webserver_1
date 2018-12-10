@@ -2,31 +2,48 @@
     <div class="gallery_wrap">
         <div class="gallery_cont">
             <?php
-                $sql = "SELECT * FROM gallery";
-                $result = $conn->query($sql);
+
                 $imgPre = "img/";
-                while ($row = $result->fetch_assoc()) {
+                // SQL sætning til at hente billeder
+                //$sql = "SELECT * FROM gallery";
+                //$result = $conn->query($sql);
+                //while ($row = $result->fetch_assoc()) {
             ?>
 
             <div class="gallery_obj">
                 <div>
-                    <img src="<?php echo $imgPre . $row["img_filename"]; ?>" alt="Gallery Image">
+                    <img src="<?php
+                            // Her skulle billed-filens navn echo'es ud
+                            //echo $imgPre . $row["img_filename"];
+                            echo $imgPre . "art1.png";
+                        ?>" alt="Gallery Image">
                     <div class="image_boxshader">
-                        <a href="" class="image_link">
+                        <a href="?page=gallery&lightbox=true" class="image_link">
                             <span>
                                 View Image
                             </span>
                         </a>
                         <a href="?page=profile&user=1" class="author_link">
-                            <?php echo $row["img_author"]; ?>
+                            <?php
+                                // Her ville jeg hente authoren på mit billede
+                                //echo $row["img_author"];
+                                echo "gedeElsker2756";
+                            ?>
                         </a>
                     </div>
                 </div>
                 <div class="image_title">
-                    <?php echo $row["img_name"]; ?>
+                    <?php
+                        // Her skal billedets navn skrives ud
+                        //echo $row["img_title"];
+                        echo "Min yndlings ged";
+                    ?>
                 </div>
             </div>
 
-            <?php } ?>
+            <?php
+                // Slutning af while-loopet
+                //}
+            ?>
         </div>
     </div>
