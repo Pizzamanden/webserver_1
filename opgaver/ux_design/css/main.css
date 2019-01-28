@@ -1,0 +1,128 @@
+/* ---------------------- Other --------------------------- */
+/*
+#011627 - Main coler, Dark navy blue
+#fdfffc - Background, white
+#2ec4b6 - Secondary highlight, Blue-green
+#e71d36 - Secondary highlight, rose-red
+#ff9f1c - tet, orange
+*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: arial;
+    background-image: url("../img/bg-black.jpg");
+}
+.flex {
+    display: flex;
+}
+.flex.sb {
+    justify-content: space-between;
+}
+.flex.sa {
+    justify-content: space-around;
+}
+a, button{
+    color: #011627;
+    text-decoration: none;
+    transition: 0.2s;
+}
+button{
+    cursor: pointer;
+}
+
+/* ---------------------- Header --------------------------- */
+
+.header_main{
+
+}
+.header_main .header_wrap{
+    background-color: #fdfffc;
+    padding: 0 20px;
+}
+.header_main .header_wrap>*{
+    width: 30%;
+}
+.header_main .header_logo{
+    padding: 10px 0;
+}
+.header_main .header_logo>img{
+    max-width: 100%;
+    display: block;
+}
+.header_main .header_search{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_main .header_search form{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_main .header_search input{
+    display: block;
+    border: 2px solid #011627;
+    background-color: #fdfffc;
+    color: #011627;
+    padding: 10px 8px;
+    width: 80%;
+}
+.header_main .header_search button{
+    width: 20%;
+    padding: 7px 8px;
+    background-color: #fdfffc;
+    font-size: 1.2em;
+    color: #011627;
+    border: 2px solid #011627;
+}
+.header_main .header_search button:hover{
+    background-color: #fdfffc;
+    color: #011627;
+    border: 2px solid #011627;
+}
+.header_main .header_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_main .header_nav ul{
+
+}
+.header_main .header_nav ul li{
+
+}
+.header_main .header_nav ul a{
+    display: block;
+    padding: 18px 16px;
+    font-size: 1.2em;
+    background-color: #fdfffc;
+    border: 3px solid #fdfffc;
+    color: #011627
+}
+.header_main .header_nav ul a:hover{
+    display: block;
+    background-color: #fdfffc;
+    border: 3px solid #011627;
+    color: #011627;
+}
+
+/* ---------------------- Main --------------------------- */
+.content_main{
+
+}
+
+/* - - - - - Assignment Frame - - - - - */
+
+
+
+
+
+/* ---------------------- Footer --------------------------- */
+
+.footer_main{
+
+}
