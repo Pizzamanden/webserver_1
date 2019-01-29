@@ -1,0 +1,131 @@
+/* ---------------------- Screen --------------------------- */
+.body_main{
+    min-width: 500px;
+}
+
+
+/* ---------------------- Header --------------------------- */
+@media screen and (max-width: 1420px) {
+    .header_main .header_wrap{
+        flex-wrap: wrap;
+    }
+    .header_main .header_logo{
+        width: 46%;
+        order: 1;
+    }
+    .header_main .header_search{
+        width: 100%;
+        order: 2;
+    }
+    .header_main .header_nav{
+        width: 46%;
+        order: 3;
+    }
+    .header_main .header_search input{
+        font-size: 1em;
+    }
+    .header_main .header_search button{
+        font-size: 1em;
+    }
+    .header_main .header_nav ul a{
+        font-size: 1.2em;
+        padding: 8px 10px;
+        border: 1px solid #fdfffc;
+    }
+    .header_main .header_nav ul a:hover{
+        background-color: #fdfffc;
+        border: 1px solid #011627;
+        color: #011627;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header_main .header_wrap{
+        display: block;
+    }
+    .header_main .header_logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header_main .header_search{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .header_main .header_nav{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .header_main .header_search input{
+        font-size: 1.2em;
+    }
+    .header_main .header_search button{
+        font-size: 1.2em;
+    }
+    .header_main .header_nav ul a{
+        font-size: 1.2em;
+        padding: 18px 16px;
+        border: 2px solid #fdfffc;
+    }
+    .header_main .header_nav ul a:hover{
+        background-color: #fdfffc;
+        border: 2px solid #011627;
+        color: #011627;
+    }
+}
+
+/* ---------------------- Main --------------------------- */
+@media screen and (max-width: 1420px) {
+    .content_main{
+        width: 100%;
+    }
+    .content_main .content_wrap{
+        max-width: 98%;
+        margin: 20px auto;
+    }
+    .content_main .content_sidebar{
+        min-width: 350px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .content_main{
+        width: 100%;
+    }
+    .content_main .content_wrap{
+        max-width: 98%;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .content_main{
+        width: 100%;
+    }
+    .content_main .content_wrap{
+        max-width: 98%;
+        margin: 20px auto;
+    }
+    .content_main .content_mainblock{
+        width: 100%;
+    }
+    .content_main .content_sidebar{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px) {
+    .content_main{
+        width: 100%;
+    }
+    .content_main .content_wrap{
+        max-width: 100%;
+    }
+    .content_main .content_mainblock{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+
+
+
+/* ---------------------- Footer --------------------------- */

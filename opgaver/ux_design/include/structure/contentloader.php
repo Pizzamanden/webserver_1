@@ -31,5 +31,18 @@ switch ($page) {
         $content .= "frontpage.php";
         break;
 }
-require_once $content;
 ?>
+<main class="content_main">
+    <div class="content_wrap flex sb">
+        <div class="content_mainblock">
+        <?php
+            require_once $content;
+        ?>
+        </div>
+        <div class="content_sidebar">
+        <?php
+            require_once "sidebar.php";
+        ?>
+        </div>
+    </div>
+</main>

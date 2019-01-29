@@ -10,7 +10,7 @@
         require_once "include/structure/HTMLhead.php";
     ?>
 </head>
-<body>
+<body class="body_main">
     <?php
         require_once "include/structure/header.php";
 

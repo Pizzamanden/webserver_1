@@ -10,8 +10,8 @@
 *{
     box-sizing: border-box;
 }
-body{
-    font-family: arial;
+.body_main{
+    font-family: 'Roboto', sans-serif;
     background-image: url("../img/bg-black.jpg");
 }
 .flex {
@@ -26,7 +26,6 @@ body{
 a, button{
     color: #011627;
     text-decoration: none;
-    transition: 0.2s;
 }
 button{
     cursor: pointer;
@@ -38,21 +37,28 @@ button{
 
 }
 .header_main .header_wrap{
+    flex-direction: row;
     background-color: #fdfffc;
     padding: 0 20px;
 }
-.header_main .header_wrap>*{
-    width: 30%;
-}
 .header_main .header_logo{
+    width: 30%;
+    flex-basis: 30%;
     padding: 10px 0;
+    order: 1;
 }
-.header_main .header_logo>img{
+.header_main .header_logo img{
     max-width: 100%;
     display: block;
 }
 .header_main .header_search{
     width: 40%;
+    flex-basis: 40%;
+    order: 2
+}
+.header_main .header_search>div{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,30 +70,45 @@ button{
     align-items: center;
 }
 .header_main .header_search input{
+    box-sizing: border-box;
     display: block;
     border: 2px solid #011627;
     background-color: #fdfffc;
     color: #011627;
     padding: 10px 8px;
     width: 80%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    font-size: 1.2em;
+    border-right: 0px solid;
 }
 .header_main .header_search button{
+    box-sizing: border-box;
+    height: 100%;
     width: 20%;
-    padding: 7px 8px;
+    padding: 10px 8px;
     background-color: #fdfffc;
     font-size: 1.2em;
     color: #011627;
     border: 2px solid #011627;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: normal;
 }
 .header_main .header_search button:hover{
     background-color: #fdfffc;
     color: #011627;
-    border: 2px solid #011627;
+    border: 4px solid #011627;
+    font-weight: bold;
 }
 .header_main .header_nav{
+    width: 30%;
+    flex-basis: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    order: 3;
 }
 .header_main .header_nav ul{
 
@@ -95,28 +116,101 @@ button{
 .header_main .header_nav ul li{
 
 }
+.header_main .header_nav ul li:first-child a{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.header_main .header_nav ul li:last-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .header_main .header_nav ul a{
     display: block;
     padding: 18px 16px;
     font-size: 1.2em;
     background-color: #fdfffc;
-    border: 3px solid #fdfffc;
-    color: #011627
+    border: 1px solid #000;
+    color: #011627;
+    font-weight: normal;
+
 }
 .header_main .header_nav ul a:hover{
-    display: block;
     background-color: #fdfffc;
     border: 3px solid #011627;
+    font-weight: bold;
     color: #011627;
 }
 
+
 /* ---------------------- Main --------------------------- */
 .content_main{
-
+    width: 100%;
+}
+.content_main .content_wrap{
+    max-width: 80%;
+    margin: 20px auto;
+}
+.content_main .content_mainblock{
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    width: 73%;
+    min-height: 600px;
+    background-color: #fdfffc;
+}
+.content_main .content_sidebar{
+    display: inline-block;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    width: 25%;
+    height: 100%;
+    background-color: #fdfffc;
 }
 
-/* - - - - - Assignment Frame - - - - - */
+/* - - - - - Card layout - Browse & search & some homepage - - - - - */
 
+.content_main .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.content_main .column {
+  flex: 1 0 32%;
+}
+
+
+.card_wrap{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 10px 0px;
+    margin: 20px 10px;
+    min-width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+}
+.card_wrap .card_img{
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.card_wrap .card_img img{
+    width: 100%;
+    display: block;
+}
+.card_wrap .card_text{
+    padding: 10px;
+}
+.card_wrap .card_header{
+    font-size: 2em;
+    margin: 10px 0;
+}
+.card_wrap .card_info{
+    margin: 20px 0;
+    font-size: 1.4em;
+}
 
 
 
